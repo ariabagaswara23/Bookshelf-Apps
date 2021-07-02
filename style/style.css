@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    overflow: auto;
+    height: 80vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #191970;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+    color: aliceblue;
+    padding: 20px;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    height: 65vh;
+    margin-left: 20px;
+    top: 0;
+    position: sticky;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.tambah-buku h2 {
+    text-align: center;
+    color: midnightblue;
+    margin-top: 15px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: lighter;
+}
+
+input[type=text] {
+    background-color: aliceblue;
+    border: 2px solid midnightblue;
+    color: midnightblue;
+    border-radius: 8px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    flex-grow: 4;
+}
+
+input[type=checkbox] {
+    align-self: flex-start;
+    height: 25px;
+}
+
+.checkbox {
+    flex-direction: row;
+}
+
+.checkbox p {
+    color: midnightblue;
+}
+
+.btn-submit {
+    background-color: midnightblue;
+    color: aliceblue;
+    padding: 8px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn-submit:hover {
+    background-color: aliceblue;
+    color: midnightblue;
+    border: 1px solid midnightblue;
+    transition: 0.3s ease-in;
+}
+
+.right-side {
+    float: left;
+    width: 70%;
+}
+
+.search {
+    margin: 50px 20px 20px 20px;
+
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    padding: 15px;
+    background-color: midnightblue;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 7px;
+    position: relative;
+    bottom: 0;
+}
+
+.item {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+    transition: 0.3s ease-in;
+}
+
+.trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+    transition: 0.3s ease-in;
+}
+
+.undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    transition: 0.3s ease-in;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+
+@media (max-width: 766px) {
+    aside {
+        width: 100%;
+        margin: 0px;
+        padding: 10px 20px;
+        height: 60vh;
+        position: relative;
+    }
+
+    .container {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    input[type=text] {
+        font-size: 12px;
+    }
+
+    .checkbox p {
+        font-size: 12px;
+    }
+
+    input[type=checkbox] {
+        height: 15px;
+    }
+}
